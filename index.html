@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,33 +17,49 @@
       color: #333;
     }
     header {
-      background: linear-gradient(135deg, #091540, #1d2b64);
-      color: white;
-      padding: 80px 20px 60px;
-      text-align: center;
       position: relative;
+      height: 100vh;
+      background-image: url('image_1751079216309.jpeg'); /* Cambia esta URL si quieres usar una imagen externa */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      color: white;
+      text-align: center;
+      overflow: hidden;
     }
-    header img {
-      max-width: 120px;
+    header::before {
+      content: "";
       position: absolute;
-      top: 20px;
-      left: 20px;
+      inset: 0;
+      background: rgba(9, 21, 64, 0.8); /* Overlay azul marino oscuro */
+      z-index: 0;
+    }
+    header h1,
+    header p,
+    header img {
+      position: relative;
+      z-index: 1;
     }
     header h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       margin-bottom: 20px;
     }
     header p {
       font-size: 1.2rem;
       max-width: 600px;
-      margin: 0 auto;
     }
-    .hero-image {
-      max-width: 100%;
-      margin: 40px auto 0;
-      border-radius: 20px;
-      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    header img.logo {
+      max-width: 80px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
     }
+
     .section {
       padding: 60px 20px;
       max-width: 1100px;
@@ -113,10 +130,9 @@
 </head>
 <body>
   <header>
+    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/4712/4712073.png" alt="AI Icon" />
     <h1>Agentes Virtuales Inteligentes</h1>
     <p>Automatiza tu atención al cliente con soluciones impulsadas por IA. Responde más rápido, mejora la experiencia y escala tu negocio.</p>
-    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712073.png" alt="AI Icon" />
-    <img class="hero-image" src="image_1751079216309.jpeg" alt="Hero Chatbot" />
   </header>
 
   <section class="section">
