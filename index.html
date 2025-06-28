@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Innovation | Agentes Virtuales IA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f4f7fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #091540, #1d2b64);
+      color: white;
+      padding: 80px 20px 60px;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      max-width: 120px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .hero-image {
+      max-width: 100%;
+      margin: 40px auto 0;
+      border-radius: 20px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      color: #1d2b64;
+      margin-bottom: 20px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .feature {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .feature img {
+      max-width: 80px;
+      margin-bottom: 15px;
+    }
+    .feature h3 {
+      margin-top: 0;
+      color: #203a43;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .cta a {
+      background: #1d2b64;
+      color: white;
+      padding: 15px 40px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #142248;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 16px;
+      border-radius: 50%;
+      font-size: 26px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 0.9rem;
+      background: #f0f0f0;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agentes Virtuales Inteligentes</h1>
+    <p>Automatiza tu atención al cliente con soluciones impulsadas por IA. Responde más rápido, mejora la experiencia y escala tu negocio.</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712073.png" alt="AI Icon" />
+    <img class="hero-image" src="https://media.licdn.com/dms/image/D4E12AQEjQg7t2dbsOQ/article-cover_image-shrink_720_1280/0/1683245115277?e=2147483647&v=beta&t=cRWJHLgMZK2k4SRL2nZ3NeHOqFwC-c2K6rTwj7ZuDY4" alt="Hero Chatbot" />
+  </header>
+
+  <section class="section">
+    <h2>¿Qué pueden hacer nuestros agentes virtuales?</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/9474/9474412.png" alt="24/7 Icon" />
+        <h3>Soporte 24/7</h3>
+        <p>Siempre disponibles para resolver dudas, gestionar citas y asistir a tus clientes.</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Integración" />
+        <h3>Conexión Total</h3>
+        <p>Integración fluida con WhatsApp, CRM, plataformas sociales y más.</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/8198/8198077.png" alt="Machine Learning" />
+        <h3>IA que Aprende</h3>
+        <p>Mejora continua a través del aprendizaje automático, ajustándose a tus clientes.</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920065.png" alt="Ahorro" />
+        <h3>Optimización de Costos</h3>
+        <p>Reduce cargas operativas y mejora la eficiencia general del negocio.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="mailto:info@digitalinnovation.agency">Solicita tu agente IA ahora</a>
+    </div>
+  </section>
+
+  <a class="whatsapp" href="https://wa.me/13463661414" target="_blank" title="Agente Virtual IA en WhatsApp 🤖">🤖</a>
+
+  <footer>
+    © 2025 Digital Innovation · Desarrollado con pasión y visión futurista.
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    gsap.from("header h1", { y: -40, opacity: 0, duration: 1 });
+    gsap.from("header p", { y: 40, opacity: 0, duration: 1, delay: 0.3 });
+    gsap.from(".feature", {
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      stagger: 0.2,
+      delay: 0.5
+    });
+  </script>
+</body>
+</html>
